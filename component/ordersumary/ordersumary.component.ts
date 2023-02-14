@@ -14,14 +14,15 @@ export class OrdersumaryComponent {
     public email:any;
     public phone:any;
     public address:any;
+    public sale:any;
   constructor(private customerDataService: CustomerDatasetService,
     
 
-     ){}
+     ){         }
   ngOnInit():void{
     
     this.customerDataService.getCustomerDetail().subscribe((data)=>{
-      alert("the preexist candidate");
+      // alert("the preexist candidate");
       console.log(data);
       //this.customerData=data['type'];
      
