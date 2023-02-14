@@ -1,0 +1,15 @@
+
+<div style="width:50%">
+    <ng-multiselect-dropdown
+    [placeholder]="'Select Your Payment Mode '"
+   
+   
+    (onSelect)="onItemSelect($event)"
+    
+    
+    (onDeSelect)="onItemDeSelect($event)"
+   
+        [settings]="dropdownSettings"
+        [data]="dropdownList">
+    </ng-multiselect-dropdown>
+</div>

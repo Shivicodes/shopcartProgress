@@ -1,0 +1,99 @@
+<ng-container class="checkAlreadyCustomer">
+    <h2 >Please fill up TRUE in the box if you are a match to any </h2>
+    <div class="option1">
+    <input class="input1" type="text"  #new name="new" placeholder="I am new customer...">
+<button type="button" (click)="func2(new.value)">Go To Sign Up Page</button>
+</div>
+    <div class="option2" style="background-color: currentcolor;
+    height: 128px;">
+    <input class="input1" type="text"  #exist name="exist" style="margin-left: 132px;
+    margin-top: 43px;
+    background-color: linen;" placeholder="I am preexisting customer...">
+<button type="button" (click)="func1(exist.value)">Go To Login Page</button>
+    </div>
+
+</ng-container>
+<ng-container class="alreadyCustomer" *ngIf="this.alreadyCustomer && this.filledBox">
+    <div class="loginPage">
+        <h3 style="padding: 18px 95px;
+        background-color: mediumpurple;">Login Here!!  Already a member</h3>
+        <br><br><br>
+        <div class="loginValidator" >
+           
+                
+                <p style="margin-left: 2em !important;
+                margin-top: -2em !important;
+                text-decoration-line: blink;
+                font-size: 21px;
+                color: black !important;">Enter your phone number to continue....</p>
+                <div class="fillBox">
+                    <div class="phone" >
+                        <input  #mailformat style="margin-left: 19em;
+                        padding: 9px 43px;"  type="number" placeholder="Enter Your Contact Number">
+                       <div> <p style="margin-left: 31em;
+                        margin-top: 5px;"><span click="/emailLogin">Use Email-ID</span></p></div>
+                    </div>
+                </div>
+                <div class="login-btn"><button class="btn1" routerLink="/payment"><strong>Login !!</strong></button></div>
+    
+    
+            
+        </div>
+
+
+    </div>
+
+</ng-container>
+<ng-container class="newCustomer" *ngIf="!this.alreadyCustomer && this.filledBox">
+    <div class="signUpPage">
+        <div class="signup">
+            <h3 style="padding: 18px 95px;
+            background-color: mediumpurple;"> Sign Up! NEW TO SHOPME </h3>
+                <br><br><br>
+                <div class="infoform">
+                    
+                    <!-- <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+                        <div class="form-group">
+                          <label for="name">Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="Name"
+                                 required
+                                 [(ngModel)]="this.name" name="name"
+                                 #name="ngModel">
+                          <div [hidden]="name.valid || name.pristine"
+                               class="alert alert-danger">
+                            Name is required
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="text" class="form-control" id="email"
+                                 [(ngModel)]="this.email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="text" class="form-control" id="phone"
+                                   [(ngModel)]="this.phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address"
+                                   [(ngModel)]="this.address" name="address">
+                        </div>
+                        <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
+                       
+                      </form> -->
+                    <input class="input2" id="name" type="text" placeholder="Name"><br>
+                    <input class="input2" id="Email" type="mail" placeholder="Email Address"><br>
+                    <input class="input2" id="phone" type="tel" name="phone" placeholder="Mobile Number"><br>
+                    <input class="input2" id="address" type="text" placeholder="Address">
+                     
+                </div> 
+                <div class="signup-btn" style="margin-top: 1em;margin-left: 39em;"><button class="btn1" routerLink="/payment"><strong>SignUp!!</strong></button></div>
+        </div>
+    </div>
+
+</ng-container>
+<div class="condition"><p>By continuing , you agree to shopnow  <strong>Terms of Use</strong> 
+    and<br><strong>Privacy Policy</strong></p></div>
+
+

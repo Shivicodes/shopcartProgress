@@ -1,0 +1,35 @@
+hr {
+    margin: 8rem 26px;
+    color: inherit;
+    border: 0;
+    border-top: 3px solid;
+    opacity: 12.25;
+}
+  
+#mobileNumber{
+    padding-left: 12px!important;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #212121;
+    letter-spacing: .16em;
+}
+.accept-tcpp__tfCB0{
+    display: block;
+    margin: 0em 21em;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    /* letter-spacing: 0.02em; */
+    color: mediumpurple;
+}
+.btn__2Qe8i{
+    font-size: 14px;
+    font-weight: 700;
+    height: 36px;
+    opacity: 1.5;
+    width: 32%;
+    background-color: rebeccapurple;
+    margin: 30px 269px 16px;
+
+}

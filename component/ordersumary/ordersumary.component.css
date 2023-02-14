@@ -1,0 +1,69 @@
+h2{
+    background-color: beige;
+    width: -2em;
+    height: 3em;
+    text-align: center;
+    padding: 19px 7px;
+}
+.option1{
+    padding: 53px 130px;
+    background-color: lemonchiffon;
+}
+.input1{
+    border:5px dotted teal;background-color:#eafafb;
+}
+button {
+    margin-left: 47px;
+    transition-duration: 0.4s;
+  }
+  
+button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+p{
+    margin-left: 25em;
+    margin-top: 3em;
+    color: darkgrey;
+    font-weight: 700;
+}  
+p:hover{
+    color: cadetblue;
+}
+.condition{
+    background-color: orangered;
+    height: 100px;
+}
+.infoform{
+    margin-left: 32px;
+    margin-right: 57px;
+    display: flex;
+    flex-direction: column;
+}
+.btn1{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0 5px #999;
+  }
+  
+  .btn1:hover {background-color: blue}
+  
+  .btn1:active {
+    background-color:aqua;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .input2:hover{
+    background-color: burlywood;
+
+  }
+  

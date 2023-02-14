@@ -1,0 +1,55 @@
+
+<div>
+    <div class="header">
+        <img src="" alt="upipay">
+        <h3>PhonePe/Google Pay/Paytm/BHIM UPI </h3>
+
+    </div>
+    <div class="dropdown">
+        <div class="heading">
+            Paytm/Wallets
+        </div>
+        <div style="width:50%">
+            <ng-multiselect-dropdown
+            [placeholder]="'Select Your preferable UPI Platform '"
+           
+           
+          (onSelect)="onItemSelect($event)" 
+            
+            
+            (onDeSelect)="onItemDeSelect($event)"
+           
+                [settings]="dropdownSettings"
+                [data]="paymodeList">
+            </ng-multiselect-dropdown>
+        </div>
+        
+    </div>
+    <div style="margin-left: 34em;
+    margin-top: -2em;">
+        <button *ngIf="paybuttonEnable">PAY NOW</button>
+    </div>
+</div>
+<ng-container>
+    <div class="form">
+        <div class="scancode" style="height: 100%;
+        width: 100%;
+        padding: 67px 262px;">
+           <h4> SCAN AND PAY BY PAYTM</h4>
+           <img src="https://mercury.phonepe.com/linchpin/f470a639528800ae92e783dc00d059aa.png">
+        </div>
+        <div class="showQRCodeButtonContainer__3it4o" style="margin-top: -11em;margin-left: 19em;"><button style="border-radius: 7px;
+            background-color: purple;" class="SHOWCODE">SHOW CODE</button></div>
+         
+    </div>
+    <hr class="new1">
+
+    <form id="onboardingForm" class="instrumentItem no-border-bottom">
+        <h1>Enter your mobile number</h1>
+        <div class="inputWrapper__3dlr2 inputWrapperContainer ">
+            <span style="margin-left: 4em;"
+            class="indiatele">+91-</span>
+           
+         <input name="mobileNumber" id="mobileNumber" class="phoneNumber__2RV0S" autocomplete="off" type="tel" placeholder="00000 00000"></div>
+            <p class="accept-tcpp__tfCB0">By generating OTP, you are agreeing to PhonePe’s <a id="registrationTnC">Terms &amp; conditions.</a></p><button disabled="" id="onboardingFormSubmitBtn" formname="login" class="btn btn__2Qe8i">Send OTP</button></form>
+</ng-container>
